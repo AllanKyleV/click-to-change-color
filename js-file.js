@@ -24,5 +24,19 @@ function resetButton() {
 resetBtn.addEventListener("click", function() {
     for (let i = 0; i < boxes.length; i++) {
         boxes[i].style.backgroundColor = resetButton();
+        changeColor(value);
     }
 })
+
+// Color
+const color = document.getElementById('color');
+const value = color.textContent;
+
+function changeColor(value) {
+    let result = '';
+    for (let i = 0; i < value.length; i++) {
+        result += `<span style="color: ${getRandomColor()};">${value[i]}</span>`;
+    }
+    color.innerHTML = result;
+}
+changeColor(value);

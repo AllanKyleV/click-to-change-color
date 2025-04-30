@@ -7,3 +7,4 @@ When you click on any box inside a container, only the clicked box should change
 
 Version 1.0 - Completed
 Version 1.1 - Reset button added
+Version 1.2 - Color text at title added
