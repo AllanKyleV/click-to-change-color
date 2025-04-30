@@ -12,3 +12,17 @@ container.addEventListener ("click", function (e) {
         e.target.style.backgroundColor = getRandomColor();
     }
 })
+
+// Reset color
+const resetBtn = document.getElementById('btn')
+const boxes = document.getElementsByClassName('box')
+
+function resetButton() {
+    return 'white';
+}
+
+resetBtn.addEventListener("click", function() {
+    for (let i = 0; i < boxes.length; i++) {
+        boxes[i].style.backgroundColor = resetButton();
+    }
+})
